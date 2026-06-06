@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		xmlns:app="http://schemas.android.com/apk/res-auto"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="15dp">
+
+		<LinearLayout
+			android:id="@+id/card1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/rounded_corners_1"
+			android:padding="10dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+			<TextView
+                android:id="@+id/assistantTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Before you start, Let's import your picture"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:gravity="center"
+				android:textStyle="bold"/>
+
+			<TextView
+                android:id="@+id/assistantSubtitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Make sure your picture is from DSLR or Mirrorless"
+				android:textAppearance="?android:attr/textAppearanceSmall"
+				android:gravity="center"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonStyleSmall"
+				android:layout_height="wrap_content"
+				android:text="Open Image"
+				android:id="@+id/openButton"/>
+
+			<LinearLayout
+				android:id="@+id/starter"
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="storage"
+					android:gravity="center"
+					android:textSize="12sp"
+					android:textStyle="italic"
+					android:textAppearance="?android:attr/textAppearanceSmall"
+					android:id="@+id/storageText"/>
+
+				<Button
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Start Checking"
+					android:id="@+id/checkButton"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="15dp"/>
+
+		<LinearLayout
+			android:id="@+id/card2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/rounded_corners_1"
+			android:padding="7dp"
+			android:gravity="center_horizontal"
+			android:orientation="vertical">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Your result:"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:layout_gravity="left"/>
+
+			<ListView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:id="@+id/metadataList"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+
